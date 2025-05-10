@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Cloud Pattern Consultancy</title>
+    <link rel="shortcut icon" href="images/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- AI Assistant Button -->
+    <div id="ai-assistant-btn" class="ai-btn animate__animated animate__bounceIn">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- AI Assistant Chat -->
+    <div id="ai-assistant" class="ai-chat">
+        <div class="ai-header">
+            <h3>CPA Assistant</h3>
+            <button id="close-ai"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="ai-messages" id="ai-messages">
+            <div class="ai-message ai-response">
+                <p>Hello! I can provide detailed information about any of our services. Which one interests you?</p>
+            </div>
+        </div>
+        <div class="ai-input">
+            <input type="text" id="ai-query" placeholder="Ask about our services...">
+            <button id="send-ai"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Social Media Float -->
+    <div class="social-float">
+        <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-btn twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+        <a href="tel:+256706276525" class="social-btn phone"><i class="fas fa-phone"></i></a>
+        <a href="mailto:patternconsultancy@gmail.com" class="social-btn email"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo animate__animated animate__fadeInLeft">
+                <img src="images/logo.svg" alt="Cloud Pattern Consultancy">
+                <span>Cloud Pattern</span>
+            </a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="btn cta-btn">Free Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <section class="page-hero services-hero">
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeInUp">
+                <h1>Our Professional Services</h1>
+                <p>Comprehensive financial solutions tailored to your business needs</p>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#services-content"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Services Content -->
+    <section class="services-content" id="services-content">
+        <div class="container">
+            <div class="services-intro">
+                <h2 class="section-title">Expert Financial Solutions</h2>
+                <p class="animate__animated_fade-up">At Cloud Pattern Consultancy, we offer a comprehensive suite of financial services designed to address every aspect of your business's financial health. Our team of certified professionals brings decades of combined experience to deliver exceptional results.</p>
+            </div>
+
+            <!-- Tax Accounting -->
+            <div class="service-section" id="tax">
+                <div class="service-card animate__animated__fade-right">
+                    <div class="service-image">
+                        <img src="images/taxation/tax1.jpg" alt="Tax Accounting">
+                    </div>
+                </div>
+                <div class="service-details animate__animated__fade-left">
+                    <h3>Tax Accounting</h3>
+                    <p>Our tax accounting services help businesses navigate complex tax regulations while maximizing savings and ensuring compliance.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Comprehensive tax planning and preparation</li>
+                        <li><i class="fas fa-check-circle"></i> Corporate and individual tax services</li>
+                        <li><i class="fas fa-check-circle"></i> Tax compliance and reporting</li>
+                        <li><i class="fas fa-check-circle"></i> Tax optimization strategies</li>
+                        <li><i class="fas fa-check-circle"></i> International tax services</li>
+                    </ul>
+                    <a href="contact.html" class="btn primary-btn">Get Tax Help</a>
+                </div>
+            </div>
+
+            <!-- Forensic Accounting -->
+    
+            <div class="service-section" id="tax">
+                <div class="service-card animate__animated__fade-right">
+                    <div class="service-image">
+                        <img src="images/taxation/tax1.jpg" alt="Tax Accounting">
+                    </div>
+            <div class="service-section" id="forensic">
+                <div class="service-details animate__animated__fade-right">
+                    <h3>Forensic Accounting</h3>
+                    <p>Our forensic accounting experts uncover financial discrepancies, investigate fraud, and provide litigation support.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Fraud detection and prevention</li>
+                        <li><i class="fas fa-check-circle"></i> Financial investigations</li>
+                        <li><i class="fas fa-check-circle"></i> Litigation support and expert testimony</li>
+                        <li><i class="fas fa-check-circle"></i> Asset tracing and recovery</li>
+                        <li><i class="fas fa-check-circle"></i> Dispute resolution services</li>
+                    </ul>
+                    <a href="contact.html" class="btn primary-btn">Investigate Now</a>
+                </div>
+                <div class="service-card animate__animated__fade-left">
+                    <div class="service-image">
+                        <img src="images/accounting/a1cntng.jpg" alt="Forensic Accounting">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auditing Services -->
+            <div class="service-section" id="auditing">
+                <div class="service-card animate__animated__fade-right">
+                    <div class="service-image">
+                        <img src="images/accounting/a2cntngaudit-service.jpg" alt="Auditing Services">
+                    </div>
+                </div>
+                <div class="service-details animate__animated__fade-left">
+                    <h3>Auditing Services</h3>
+                    <p>Our auditing services provide assurance on financial statements and help improve internal controls and processes.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Financial statement audits</li>
+                        <li><i class="fas fa-check-circle"></i> Internal audits</li>
+                        <li><i class="fas fa-check-circle"></i> Compliance audits</li>
+                        <li><i class="fas fa-check-circle"></i> Operational audits</li>
+                        <li><i class="fas fa-check-circle"></i> IT audits</li>
+                    </ul>
+                    <a href="contact.html" class="btn primary-btn">Schedule Audit</a>
+                </div>
+            </div>
+
+            <!-- Financial Accounting -->
+
+        <div class="service-section" id="tax">
+                <div class="service-card animate__animated__fade-right">
+                    <div class="service-image">
+                        <img src="images/accounting/a3cntng.jpg" alt="Tax Accounting">
+                    </div>
+            <div class="service-section" id="financial">
+                <div class="service-details animate__animated__fade-right">
+                    <h3>Financial Accounting</h3>
+                    <p>We provide accurate financial reporting and analysis to support informed business decision-making.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Financial statement preparation</li>
+                        <li><i class="fas fa-check-circle"></i> Bookkeeping services</li>
+                        <li><i class="fas fa-check-circle"></i> Financial analysis and reporting</li>
+                        <li><i class="fas fa-check-circle"></i> Budgeting and forecasting</li>
+                        <li><i class="fas fa-check-circle"></i> Cash flow management</li>
+                    </ul>
+                    <a href="contact.html" class="btn primary-btn">Improve Finances</a>
+                </div>
+                <div class="service-card animate__animated__fade-left">
+                    <div class="service-image">
+                        <img src="images/accounting/a3cntng.jpg" alt="Financial Accounting">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Administration -->
+           
+                <div class="service-details animate__animated__fade-left">
+                    <h3>Business Administration Consultancy</h3>
+                    <p>Our business administration services help streamline operations and drive organizational growth.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Business process optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Strategic planning</li>
+                        <li><i class="fas fa-check-circle"></i> Organizational restructuring</li>
+                        <li><i class="fas fa-check-circle"></i> Performance management</li>
+                        <li><i class="fas fa-check-circle"></i> Change management</li>
+                    </ul>
+                    <a href="contact.html" class="btn primary-btn">Optimize Business</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process -->
+    <section class="service-process">
+        <div class="container">
+            <h2 class="section-title">Our Service Process</h2>
+            <div class="process-steps">
+                <div class="process-step animate__animated__fade-up">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discovery</h3>
+                        <p>We begin by understanding your unique needs, challenges, and objectives through detailed consultations.</p>
+                    </div>
+                </div>
+                <div class="process-step animate__animated__fade-up__0.1s">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Analysis</h3>
+                        <p>Our experts conduct thorough analysis of your current financial situation and identify opportunities.</p>
+                    </div>
+                </div>
+                <div class="process-step animate__animated__fade-up__0.2s">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Solution Design</h3>
+                        <p>We develop customized solutions tailored to your specific requirements and goals.</p>
+                    </div>
+                </div>
+                <div class="process-step animate__animated__fade-up__0.3s">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Implementation</h3>
+                        <p>Our team executes the plan with precision, keeping you informed at every stage.</p>
+                    </div>
+                </div>
+                <div class="process-step animate__animated__fade-up__0.4s">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Review & Optimization</h3>
+                        <p>We continuously monitor results and make adjustments to ensure optimal performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Success Stories</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <p>"Cloud Pattern's tax accounting team saved us over $250,000 in tax liabilities through their strategic planning. Their expertise is unmatched."</p>
+                        <div class="client-info">
+                            <h4>Robert Taylor</h4>
+                            <p>CFO, Manufacturing Co.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"The forensic accounting investigation uncovered embezzlement we didn't even know was happening. Their attention to detail is remarkable."</p>
+                        <div class="client-info">
+                            <h4>Lisa Rodriguez</h4>
+                            <p>Director, Non-Profit Org</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Our financial reporting has never been more accurate or insightful since partnering with Cloud Pattern. They've become an extension of our team."</p>
+                        <div class="client-info">
+                            <h4>James Wilson</h4>
+                            <p>CEO, Tech Startup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Financial Operations?</h2>
+                <p>Contact us today to discuss how we can help your business thrive.</p>
+            </div>
+            <div class="cta-btns">
+                <a href="contact.html" class="btn cta-btn">Get Started</a>
+                <a href="tel:+1234567890" class="btn secondary-btn">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Cloud Pattern</h3>
+                    <p>Expert financial management and consulting services tailored to your business needs.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#tax">Tax Accounting</a></li>
+                        <li><a href="services.html#forensic">Forensic Accounting</a></li>
+                        <li><a href="services.html#auditing">Auditing Services</a></li>
+                        <li><a href="services.html#financial">Financial Accounting</a></li>
+                        <li><a href="services.html#business">Business Administration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Plot 1234, Kampala Road, Kampala, Uganda</li>
+                        <li><i class="fas fa-phone"></i> +256-706276525 </li>
+                        <li><i class="fas fa-envelope"></i> patternconsultancy@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cloud Pattern Consultancy. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/ai-assistant.js"></script>
+    <script src="js/services-animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Cloud Pattern Consultancy</title>
+    <link rel="shortcut icon" href="images/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+<body>
+    <!-- AI Assistant Button -->
+    <div id="ai-assistant-btn" class="ai-btn animate__animated animate__bounceIn">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- AI Assistant Chat -->
+    <div id="ai-assistant" class="ai-chat">
+        <div class="ai-header">
+            <h3>CPA Assistant</h3>
+            <button id="close-ai"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="ai-messages" id="ai-messages">
+            <div class="ai-message ai-response">
+                <p>Hello! I can help answer your questions or connect you with our team. How can I assist you today?</p>
+            </div>
+        </div>
+        <div class="ai-input">
+            <input type="text" id="ai-query" placeholder="Ask your question...">
+            <button id="send-ai"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Social Media Float -->
+    <div class="social-float">
+        <a href="#" class="social-btn facebook animate__animated animate__fadeInRight" style="animation-delay: 0.1s;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-btn twitter animate__animated animate__fadeInRight" style="animation-delay: 0.2s;"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="social-btn whatsapp animate__animated animate__fadeInRight" style="animation-delay: 0.3s;"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-btn instagram animate__animated animate__fadeInRight" style="animation-delay: 0.4s;"><i class="fab fa-instagram"></i></a>
+        <a href="tel:+256706276525" class="social-btn phone animate__animated animate__fadeInRight" style="animation-delay: 0.5s;"><i class="fas fa-phone"></i></a>
+        <a href="mailto:patternconsultancy@gmail.com" class="social-btn email animate__animated animate__fadeInRight" style="animation-delay: 0.6s;"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo animate__animated animate__fadeInLeft">
+                <img src="images/logo.svg" alt="Cloud Pattern Consultancy">
+                <span>Cloud Pattern</span>
+            </a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="#" class="btn cta-btn">Free Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero contact-hero">
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeInUp">
+                <h1>Get In Touch</h1>
+                <p>We're here to answer your questions and discuss how we can help your business thrive</p>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#contact-content"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content" id="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info animate__animated__fade-left">
+                    <h2>Contact Information</h2>
+                    <p>Reach out to us through any of these channels. Our team is ready to assist you.</p>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Our Office</h3>
+                            <p>Plot 1234, Cloud Pattern House<br>Kampala Road<br>Kampala, Uganda</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Phone Numbers</h3>
+                            <p>Main: +256-706276525<br>Mobile: +256-706276525<br>Fax: +256-706276525</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-details">
+                            <h3>Email Addresses</h3>
+                            <p>General: patternconsultancy@gmail.com<br>Support: patternconsultancy@gmail.com<br>Sales: patternconsultancy@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="business-hours">
+                        <h3>Business Hours</h3>
+                        <ul>
+                            <li>Monday - Friday: <span>8:00 AM - 6:00 PM</span></li>
+                            <li>Saturday: <span>9:00 AM - 2:00 PM</span></li>
+                            <li>Sunday: <span>Closed</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="emergency-contact">
+                        <p><i class="fas fa-exclamation-circle"></i> For urgent matters outside business hours, please call: <strong>+256-706276525</strong></p>
+                    </div>
+                </div>
+                
+                <div class="contact-form animate__animated__fade-right">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name <span>*</span></label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address <span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject <span>*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="tax">Tax Accounting</option>
+                                <option value="forensic">Forensic Accounting</option>
+                                <option value="audit">Auditing Services</option>
+                                <option value="financial">Financial Accounting</option>
+                                <option value="business">Business Consultancy</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="error-message" id="subject-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message <span>*</span></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <div class="error-message" id="message-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I agree to the <a href="#">privacy policy</a> and consent to Cloud Pattern Consultancy contacting me regarding my inquiry.</label>
+                            <div class="error-message" id="consent-error"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                    
+                    <div id="form-success" class="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Thank You!</h3>
+                        <p>Your message has been successfully sent. Our team will get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Our Location in Kampala</h2>
+            <div id="map" class="animate__animated" data-animate="zoomIn"></div>
+            <div class="map-actions">
+                <button id="get-directions" class="btn secondary-btn">
+                    <i class="fas fa-directions"></i> Get Directions
+                </button>
+                <button id="zoom-in" class="btn map-btn">
+                    <i class="fas fa-search-plus"></i>
+                </button>
+                <button id="zoom-out" class="btn map-btn">
+                    <i class="fas fa-search-minus"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item animate__animated__fade-up">
+                    <div class="faq-question">
+                        <h3>What are your office hours?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our standard office hours are Monday to Friday from 8:00 AM to 6:00 PM, and Saturdays from 9:00 AM to 2:00 PM. We are closed on Sundays and public holidays.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate__animated__fade-up__0.1s">
+                    <div class="faq-question">
+                        <h3>How quickly can I expect a response to my inquiry?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We strive to respond to all inquiries within 24 hours during business days. For urgent matters, please call our emergency contact number.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate__animated__fade-up__0.2s">
+                    <div class="faq-question">
+                        <h3>Do you offer free consultations?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer a free 30-minute initial consultation to discuss your needs and how we can help. Book your consultation through our website or by calling our office.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate__animated__fade-up__0.3s">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept various payment methods including bank transfers, mobile money (MTN, Airtel), credit/debit cards, and cash payments at our office.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate__animated__fade-up__0.4s">
+                    <div class="faq-question">
+                        <h3>Can I schedule an in-person meeting?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can schedule an in-person meeting at our Kampala office by calling us or using the booking system on our website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Contact us today to discuss how we can help your business achieve financial excellence.</p>
+            </div>
+            <div class="cta-btns">
+                <a href="tel:++256706276525" class="btn cta-btn">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+                <a href="#" class="btn secondary-btn" id="schedule-call-btn">
+                    <i class="fas fa-calendar-alt"></i> Schedule a Call
+                </a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Cloud Pattern</h3>
+                    <p>Expert financial management and consulting services tailored to your business needs.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#tax">Tax Accounting</a></li>
+                        <li><a href="services.html#forensic">Forensic Accounting</a></li>
+                        <li><a href="services.html#auditing">Auditing Services</a></li>
+                        <li><a href="services.html#financial">Financial Accounting</a></li>
+                        <li><a href="services.html#business">Business Administration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Plot 1234, Kampala Road, Kampala, Uganda</li>
+                        <li><i class="fas fa-phone"></i> +256-706276525 </li>
+                        <li><i class="fas fa-envelope"></i> patternconsultancy@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cloud Pattern Consultancy. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Schedule Call Modal -->
+    <div class="modal" id="schedule-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2>Schedule a Callback</h2>
+            <form id="scheduleForm">
+                <div class="form-group">
+                    <label for="schedule-name">Your Name <span>*</span></label>
+                    <input type="text" id="schedule-name" name="schedule-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="schedule-phone">Phone Number <span>*</span></label>
+                    <input type="tel" id="schedule-phone" name="schedule-phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="schedule-date">Preferred Date <span>*</span></label>
+                    <input type="date" id="schedule-date" name="schedule-date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="schedule-time">Preferred Time <span>*</span></label>
+                    <select id="schedule-time" name="schedule-time" required>
+                        <option value="">Select a time slot</option>
+                        <option value="09:00-10:00">09:00 AM - 10:00 AM</option>
+                        <option value="10:00-11:00">10:00 AM - 11:00 AM</option>
+                        <option value="11:00-12:00">11:00 AM - 12:00 PM</option>
+                        <option value="12:00-13:00">12:00 PM - 01:00 PM</option>
+                        <option value="14:00-15:00">02:00 PM - 03:00 PM</option>
+                        <option value="15:00-16:00">03:00 PM - 04:00 PM</option>
+                        <option value="16:00-17:00">04:00 PM - 05:00 PM</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="schedule-purpose">Purpose of Call <span>*</span></label>
+                    <textarea id="schedule-purpose" name="schedule-purpose" rows="3" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn primary-btn">Schedule Callback</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ai-assistant.js"></script>
+    <script src="js/contact-animations.js"></script>
+    <script>
+        // Initialize Map
+        function initMap() {
+            // Kampala coordinates (approximate city center)
+            const kampala = { lat: 0.3136, lng: 32.5811 };
+            
+            // Create map centered on Kampala
+            const map = L.map('map').setView(kampala, 14);
+            
+            // Add OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            
+            // Add marker for Cloud Pattern office
+            const officeMarker = L.marker([0.3163, 32.5822]).addTo(map)
+                .bindPopup("<b>Cloud Pattern Consultancy</b><br>Plot 1234, Kampala Road");
+            
+            // Zoom controls
+            document.getElementById('zoom-in').addEventListener('click', () => {
+                map.zoomIn();
+            });
+            
+            document.getElementById('zoom-out').addEventListener('click', () => {
+                map.zoomOut();
+            });
+            
+            // Get directions button
+            document.getElementById('get-directions').addEventListener('click', () => {
+                window.open('https://www.google.com/maps/dir//0.3163,32.5822', '_blank');
+            });
+        }
+        
+        // Initialize map when page loads
+        document.addEventListener('DOMContentLoaded', initMap);
+        
+        // Form validation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple validation
+            let isValid = true;
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const subject = document.getElementById('subject');
+            const message = document.getElementById('message');
+            const consent = document.getElementById('consent');
+            
+            // Reset errors
+            document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+            
+            // Validate name
+            if (name.value.trim() === '') {
+                document.getElementById('name-error').textContent = 'Please enter your name';
+                isValid = false;
+            }
+            
+            // Validate email
+            if (email.value.trim() === '') {
+                document.getElementById('email-error').textContent = 'Please enter your email';
+                isValid = false;
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+                document.getElementById('email-error').textContent = 'Please enter a valid email';
+                isValid = false;
+            }
+            
+            // Validate subject
+            if (subject.value === '') {
+                document.getElementById('subject-error').textContent = 'Please select a subject';
+                isValid = false;
+            }
+            
+            // Validate message
+            if (message.value.trim() === '') {
+                document.getElementById('message-error').textContent = 'Please enter your message';
+                isValid = false;
+            }
+            
+            // Validate consent
+            if (!consent.checked) {
+                document.getElementById('consent-error').textContent = 'Please agree to our privacy policy';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Simulate form submission
+                document.getElementById('contactForm').style.display = 'none';
+                document.getElementById('form-success').style.display = 'block';
+                
+                // You would typically send the form data to your server here
+                // For demo purposes, we're just showing the success message
+            }
+        });
+        
+        // FAQ functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                
+                // Rotate icon
+                icon.style.transform = icon.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+                
+                // Toggle question active state
+                question.parentElement.classList.toggle('active');
+            });
+        });
+        
+        // Modal functionality
+        const modal = document.getElementById('schedule-modal');
+        const btn = document.getElementById('schedule-call-btn');
+        const closeBtn = document.querySelector('.close-modal');
+        
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.style.display = 'block';
+        });
+        
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+        
+        // Schedule form validation
+        document.getElementById('scheduleForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple validation
+            let isValid = true;
+            const name = document.getElementById('schedule-name');
+            const phone = document.getElementById('schedule-phone');
+            const date = document.getElementById('schedule-date');
+            const time = document.getElementById('schedule-time');
+            const purpose = document.getElementById('schedule-purpose');
+            
+            if (name.value.trim() === '') {
+                isValid = false;
+                name.style.borderColor = 'red';
+            } else {
+                name.style.borderColor = '#ddd';
+            }
+            
+            if (phone.value.trim() === '') {
+                isValid = false;
+                phone.style.borderColor = 'red';
+            } else {
+                phone.style.borderColor = '#ddd';
+            }
+            
+            if (date.value === '') {
+                isValid = false;
+                date.style.borderColor = 'red';
+            } else {
+                date.style.borderColor = '#ddd';
+            }
+            
+            if (time.value === '') {
+                isValid = false;
+                time.style.borderColor = 'red';
+            } else {
+                time.style.borderColor = '#ddd';
+            }
+            
+            if (purpose.value.trim() === '') {
+                isValid = false;
+                purpose.style.borderColor = 'red';
+            } else {
+                purpose.style.borderColor = '#ddd';
+            }
+            
+            if (isValid) {
+                // Here you would typically send the data to your server
+                alert('Your callback has been scheduled successfully! We will call you at the selected time.');
+                modal.style.display = 'none';
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>
