@@ -187,6 +187,44 @@ a {
     color: var(--primary-dark);
     cursor: pointer;
 }
+CLOUD PATTERN CONSULTANCY/css/style.css */
+/* Responsive Navigation */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        box-shadow: none;
+    }
+}
 
 /* Hero Section */
 .hero {
